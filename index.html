@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JavaScript Quiz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="card shadow">
+      <div class="card-header bg-primary text-white">
+        <h2 class="mb-0">JavaScript Events & DOM Quiz</h2>
+      </div>
+      <div class="card-body">
+        <form id="quizForm">
+          <div class="question mb-4">
+            <p class="fw-bold">1. Which event occurs when a user clicks on an HTML element?</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" value="a" id="q1a">
+              <label class="form-check-label" for="q1a">click</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" value="b" id="q1b">
+              <label class="form-check-label" for="q1b">mousedown</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" value="c" id="q1c">
+              <label class="form-check-label" for="q1c">change</label>
+            </div>
+          </div>
+
+          <div class="question mb-4">
+            <p class="fw-bold">2. What method is used to select an element by its ID?</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" value="a" id="q2a">
+              <label class="form-check-label" for="q2a">querySelector()</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" value="b" id="q2b">
+              <label class="form-check-label" for="q2b">getElementById()</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" value="c" id="q2c">
+              <label class="form-check-label" for="q2c">getElementsByClassName()</label>
+            </div>
+          </div>
+
+          <div class="question mb-4">
+            <p class="fw-bold">3. Which event occurs when an HTML form is submitted?</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q3" value="a" id="q3a">
+              <label class="form-check-label" for="q3a">finish</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q3" value="b" id="q3b">
+              <label class="form-check-label" for="q3b">submit</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q3" value="c" id="q3c">
+              <label class="form-check-label" for="q3c">end</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit Quiz</button>
+        </form>
+        <div id="result" class="mt-4"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
