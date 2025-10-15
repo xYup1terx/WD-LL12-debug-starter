@@ -1,4 +1,8 @@
+const quiz = document.getElementById('quizForm');
+quiz.addEventListener('submit', handleQuizSubmission);
 function handleQuizSubmission(e) {
+  console.log('Quiz submitted');
+  e.preventDefault(); // Prevent the default form submission behavior
   const { score, total } = calculateScore();
   displayQuizResult(score, total);
 }
